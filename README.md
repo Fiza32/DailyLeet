@@ -1,1 +1,1 @@
-# DailyLeetPrank
+## Daily Leetcode & POTD on GFG
