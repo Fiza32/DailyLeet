@@ -1,1 +1,1 @@
-## Daily Leetcode & POTD on GFG
+## Daily Leetcode Question
