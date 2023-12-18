@@ -15,7 +15,6 @@ class Solution {
 
 class Solution2 {
     public int maxProductDifference(int[] nums) {
-        int n = nums.length;
 
         int fstMax = Integer.MIN_VALUE;;
         int secMax = Integer.MIN_VALUE;
