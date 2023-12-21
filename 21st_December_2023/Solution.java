@@ -12,6 +12,14 @@ class Solution {
 
         return max;
     }
+
+    // Time Complexity
+    // Sorting - O(n log n)
+    // Loop - O(n)
+    // Overall --->>>   O(n log n);
+
+    // Space Complexity
+    // O(1) -->> The fn doesn't allocate any additional memory structures
 }
 
 class SolutionII {
@@ -34,4 +42,15 @@ class SolutionII {
 
         return max;
     }
+    // Time Complexity
+    // O(n) -->>    The Loop that copies x-coordinates from points to arr
+    // O(n log n) -->>     To sort the arr
+    // O(n)  -->>       To iterate over the arr
+    // Overall T.C      -->>        O(n log n);
+
+
+    // Space Complexity
+    // O(n)  -->>   To create an array 'arr'
+    // O(1)  -->>   Constant variables
+    // Overall S.C      -->>        O(n);
 }
