@@ -30,3 +30,34 @@ class Solution {
     }
 }
 
+
+class SolutionII {
+    public int countCharacters(String[] words, String chars) {
+        int[] charFreqInChars = new int[26];
+        for(char ch : chars.toCharArray()){
+            charFreqInChars[ch - 'a']++;
+        }
+
+        int sum = 0;
+
+        for(String word : words){
+            int[] charFreqInWord = new int[26];
+
+            for(char ch : word.toCharArray()){
+                charFreqInWord[ch - 'a']++;
+            }
+
+            boolean flag = true;
+            for(int i = 0; i < 26; i++){
+                if(charFreqInWord[i] > charFreqInChars[i]){
+                    flag = false;
+                    break;
+                }
+            }
+
+            if(flag) sum += word.length();
+        }
+
+        return sum;
+    }
+}
